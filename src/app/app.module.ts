@@ -7,12 +7,12 @@ import { HelloComponent } from './hello.component';
 import { DadosUsuarioComponent } from './dados-usuario/dados-usuario.component';
 import { DetalheUsuarioComponent } from './detalhe-usuario/detalhe-usuario.component';
 import { ListaUsuarioComponent } from './lista-usuario/lista-usuario.component';
-import { ContatosDataBaseServiceService } from './servicos/contatos-data-base-service.service';
+import { ContatosDataBaseService } from './servicos/contatos-data-base.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, DadosUsuarioComponent, DetalheUsuarioComponent, ListaUsuarioComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [ContatosDataBaseServiceService]
+  providers: [ContatosDataBaseService]
 })
 export class AppModule { }

@@ -2,7 +2,7 @@ import { Injectable, EventEmitter } from '@angular/core';
 import { ContatoModel } from '../modelos/contato-model';
 
 @Injectable()
-export class ContatosDataBaseServiceService {
+export class ContatosDataBaseService {
 
   meuContatos : ContatoModel [] = [];
   enviarContato = new EventEmitter();
